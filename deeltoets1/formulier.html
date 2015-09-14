@@ -14,117 +14,101 @@
             <p>Bent u geïnteresseerd in samenwerken met CMD Amsterdam? Dat kan!
             Tijdens de opleiding werken studenten aan projecten voor echte opdrachtgevers. Ook
             lopen de studenten stage, in het tweede en afstudeerjaar.</p>
-            <p><i>CMD Amsterdam zoekt altijd naar positieve verbindingen met de creatieve stad
-            Amsterdam.</i></p>
+            <p><em>CMD Amsterdam zoekt altijd naar positieve verbindingen met de creatieve stad
+            Amsterdam.</em></p>
             <p>Voor het aanmelden van stageplekken of projecten kunt u onderstaand formulier invullen.
             Wij nemen zo nodig contact met u op nadat het formulier is verstuurd.
             Voor vragen of opmerkingen kunt u <a href="#">contact</a> met ons op.</p>
-            <p>Contactgegevens:</p>
             <form>
-                Naam:<input type="text" name="naam">
-                <br>
-                Bedrijf:<input type="text" name="bedrijf">
-                <br>
-                Adres:<input type="text" name="adres">
-                <br>
-                Postcode:<input type="text" name="postcode">
-                <br>
-                Plaats:<input type="text" name="plaats">
-                <br>
-                Telefoon:<input type="text" name="telefoon">
-                <br>
-                Email:<input type="text" name="email">
-                <br>
-                Ik wil mij aanmelden:
-                <br>
-                <input type="radio" name="aanmelden" value="project" checked>Voor een project
-                <br>
-                <input type="radio" name="aanmelden" value="stagebedrijf">Als stagebedrijf
+                    <fieldset>
+                        <legend>Contactgegevens:</legend>
+                            <label for="naam">Naam:</label>
+                                <input type="text" name="naam" id="naam">
+                            <label for="bedrijf">Bedrijf:</label>
+                                <input type="text" name="bedrijf" id="bedrijf">
+                            <label for="adres">Adres:</label>
+                                <input type="text" name="adres" id="adres">
+                            <label for="postcode">Postcode:</label>
+                                <input type="text" name="postcode" id="postcode">
+                            <label for="plaats">Plaats:</label>
+                                <input type="text" name="plaats" id="plaats">
+                            <label for="telefoon">Telefoon:</label>
+                                <input type="tel" name="telefoon" id="telefoon">
+                            <label for="email">E-mail</label>
+                                <input type="email" name="email" id="email">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Ik wil mij aanmelden:</legend>
+                        <input type="radio" name="aanmelden" value="project" id="project" checked>
+                            <label for="project">Voor een project</label>
+                        <input type="radio" name="aanmelden" value="stagebedrijf" id="stagebedrijf">
+                            <label for="stagebedrijf">Als stagebedrijf</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Project</legend>
+                            <label for="titel">Titel:</label>
+                                <input type="text" name="titel" id="titel">
+                            <label for="opdracht">Opdrachtomschrijving:</label>
+                                <input type="text" name="opdracht" id="opdracht">
+                            <label for="doelgroep">Doelgroepomschrijving:</label>
+                                <input type="text" name="doelgroep" id="doelgroep">
+                            <label for="doel">Doelstelling / Intentie van het project:</label>
+                                <input type="text" name="doel" id="doel">
+                            <label for="looptijd">Looptijd:</label>
+                                <input type="text" name="looptijd" id="looptijd">
+                            <label for="deadline">Deadline:</label>
+                                <input type="date" name="deadline" id="deadline">
+                            Geschikt voor:
+                                <input type="radio" name="geschikt" value="eerste" id="eerste" checked>
+                                    <label for="eerste">eerstejaars</label>
+                                <input type="radio" name="geschikt" value="tweede" id="tweede">
+                                    <label for="tweede">tweedejaars</label>
+                                <input type="radio" name="geschikt" value="derde" id="derde">
+                                    <label for="derde">derdejaars</label>
+                                <input type="radio" name="geschikt" value="afstudeer" id="afstudeer">
+                                    <label for="afstudeer">afstudeer studenten</label>
+                                <input type="radio" name="geschikt" value="onbekend" id="onbekend">
+                                    <label for="onbekend">onbekend</label>
+                                <label for="opmerking">Opmerking:</label>
+                                    <input type="text" name="opmerking" id="opmerking">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Stage:</legend>
+                            Geschikt voor:
+                            <input type="radio" name="geschikts" value="tweedes" id="tweedes" checked>
+                                <label for="tweedes">tweedejaars</label>
+                            <input type="radio" name="geschikts" value="derdes" id="derdes">
+                                <label for="derdes">derdejaars</label>
+                            <input type="radio" name="geschikts" value="onbekends" id="onbekends">
+                                <label for="onbekends">onbekend</label>
+                            Hoe lang is de stage?
+                            <input type="radio" name="weken" value="tien" id="tien" checked>
+                                <label for="tien">10 weken</label>
+                            <input type="radio" name="weken" value="twintig" id="twintig">
+                                <label for="twintig">20 weken</label>
+                            <label for="begindatum">Begindatum:</label>
+                                <input type="date" name="begindatum" id="begindatum">
+                            Beschrijving werkzaamheden:
+                            <label for="werkzaamheden">Beschrijving stagewerkzaamheden:</label>
+                                <input type="text" name="werkzaamheden" id="werkzaamheden">
+                            Beschrijving stagebedrijf:
+                            <label for="bedrijfsnaam">Bedrijfsnaam:</label>
+                                <input type="text" name="bedrijfsnaam" id="bedrijfsnaam">
+                            <label for="bedrijfsadres">Adres:</label>
+                                <input type="text" name="bedrijfsadres" id="bedrijfsadres">
+                            <label for="bedrijfspostcode">Postcode:</label>
+                                <input type="text" name="bedrijfspostcode" id="bedrijfspostcode">
+                            <label for="bedrijfsplaats">Plaats:</label>
+                                <input type="text" name="bedrijfsplaats" id="bedrijfsplaats">
+                            <label for="sector">Sector:</label>
+                                <input type="text" name="sector" id="sector">
+                            <label for="core">Core Business:</label>
+                                <input type="text" name="core" id="core">
+                            <label for="opmerkings">Opmerking:</label>
+                                <input type="text" name="opmerkings" id="opmerkings">
+                    </fieldset>
+                <input type="submit" value="Verzenden">
             </form>
-            <table> <!--border="1" style="width:100%" -->
-                <tr>
-                    <th>Project</th>
-                    <th>Stage</th>
-                </tr>
-                <tr>
-                    <td>
-                        <ol>
-                            <li>Titel</li>
-                            <li>Opdrachtomschrijving</li>
-                            <li>Doelgroepomschrijving</li>
-                            <li>Doelstelling/ intentie van het project</li>
-                            <li>Looptijd</li>
-                            <li>Deadline</li>
-                        </ol>
-                    </td>
-                    <td>
-                    Geschikt voor
-                        <ol>
-                            <li>tweedejaars studenten</li>
-                            <li>afstudeer studenten</li>
-                            <li>onbekend</li>
-                        </ol>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                    Geschikt voor
-                        <ol>
-                            <li>eerstejaars studenten</li>
-                            <li>tweedejaars studenten</li>
-                            <li>derdejaars studenten</li>
-                            <li>afstudeer studenten</li>
-                            <li>onbekend</li>
-                        </ol>
-                    </td>
-                    <td>
-                        <ol>
-                            <li>Hoe lang is de stage?</li>
-                            <!--ul als li in ol (ul not allowed as child ol) voor validation -->
-                                    <ul>
-                                    <li>10 weken</li>
-                                    <li>20 weken</li>
-                                    </ul>
-                            <li>Begin datum</li>
-                        </ol>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                    </td>
-                    <td>
-                    Beschrijving werkzaamheden:
-                        <ol>
-                            <li>
-                                Beschrijving stagewerkzaamheden
-                            </li>
-                        </ol>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                    </td>
-                    <td>
-                    Beschrijving stagebedrijf
-                        <ol>
-                            <li>Bedrijfsnaam</li>
-                            <li>Adres</li>
-                            <li>Postcode</li>
-                            <li>Plaats</li>
-                            <li>Sector</li>
-                            <li>Core Business</li>
-                        </ol>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Opmerking
-                    </td>
-                    <td>
-                        Opmerking
-                    </td>
-                </tr>
-            </table>
         </main>
         <footer>
         </footer>
